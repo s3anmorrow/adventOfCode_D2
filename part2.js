@@ -12,9 +12,8 @@ function readInput() {
     })
 
     .on("close", () => {
-
       let differences = 0;
-      let position = -1;
+      let position = 0;
       for (let n=0; n<log.length - 1; n++) {
         let line1 = log[n].split("");
 
@@ -23,7 +22,6 @@ function readInput() {
           let line2 = log[r].split("");
 
           differences = 0;
-          position = -1;
           // go through each letter to see if all same (except one)
           for (let p=0; p<line1.length; p++) {
             if (line1[p] != line2[p]) {
