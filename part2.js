@@ -17,8 +17,7 @@ function readInput() {
       for (let n=0; n<log.length - 1; n++) {
         let line1 = log[n].split("");
 
-        for (let r=0; r<log.length - 1; r++) {
-          if (r == n) continue;
+        for (let r=n + 1; r<log.length - 1; r++) {
           let line2 = log[r].split("");
 
           differences = 0;
